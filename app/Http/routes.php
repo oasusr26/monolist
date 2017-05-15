@@ -20,3 +20,8 @@ Route::get('/', 'WelcomeController@index');
 // ユーザー登録
 Route::get('signup', 'Auth\AuthController@getRegister')->name('signup.get');
 Route::post('signup', 'Auth\AuthController@postRegister')->name('signup.post');
+
+// ログイン認証
+Route::get('login', 'Auth\AuthContoller@getLogin')->name('login.get');
+Route::post('login', 'Auth\AuthContoller@postLogin')->name('login.post');
+Route::get('logout', 'Auth\AuthController@getLogout')->name('logout.get');
