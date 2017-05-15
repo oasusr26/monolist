@@ -15,6 +15,12 @@
 
 @section('content')
 
-テスト
+<div class="cover">
+    <div class="cover-inner">
+        <div class="cover-contents">
+            <a href="{{ route('items.index') }}" class="btn btn-primary btn-lg">LINK TEST</a>
+        </div>
+    </div>
+</div>
 
 @endsection
